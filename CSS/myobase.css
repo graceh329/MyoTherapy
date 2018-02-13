@@ -1,0 +1,23 @@
+/*
+	##Colors
+	dark   - #10161d
+	blue   - #58bccc
+	teal   - #04fbec
+	yellow - #ebf1be
+	red    - #c14b2a
+	green  - #8aceb5
+	orange - #d2833c
+*/
+.graph{
+	height : 200px;
+	width  : 500px;
+}
+.warningPulse{
+	animation                 : pulse 2s ease-out;
+	animation-iteration-count : infinite;
+}
+@keyframes pulse {
+	0%   {opacity : 1}
+	50%  {opacity : 0.1}
+	100% {opacity : 1}
+}

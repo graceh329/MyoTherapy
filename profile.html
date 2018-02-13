@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>MyoTherapy Profile</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+    <script src="Scripts/plotly-latest.min.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html">MyoTherapy</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+          </li>
+           <li class="nav-item active">
+            <a class="nav-link" href="profile.html">Profile<span class="sr-only">(current)</span></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exercises</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Pinch and Grip</a>
+            <a class="dropdown-item" href="#">Flip Hand</a>
+            <a class="dropdown-item" href="#">Froment Test </a>
+          </div>
+        </li>
+        </ul>
+        
+        <a class="btn btn-outline-info my-2 my-sm-0" href="login.html">Logout</a>
+        
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron" style="padding-bottom: 1rem;background-color:#93dbff" >
+        <div class="container" style="padding-top: 6rem; padding-left:3rem; background-color:#93dbff">
+          <img src="images/profpic.jpg" class="rounded-circle" style="width: 90px; length: 90px; float: left; margin-right: 0.6cm;">
+          <h1 style="margin-left: 0.6cm; margin-top: 0.1cm;" class="display-3">Hi, Jeffrey</h1>
+        </div>
+      </div>
+
+      <div class="container" align="center">
+      <h1 style="margin-bottom: 1rem;">Today's Exercises</h1>
+    </div>
+    <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row" align="center">
+          <div class="col-lg-4">
+            <a href="pinchIntro.html"><img class="rounded-circle" src="images/pinchgrip1.jpg" width="140" height="140">
+           <h5 style="font-weight:normal">Pinch and Grip Test</h5></a>
+            <!--<p><a class="btn btn-secondary" href="#" role="button">Start &raquo;</a></p>-->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <a href="flipIntro.html">
+            <img class="rounded-circle" src="images/flipHand.jpeg" width="140" height="140">
+            <h5 style="font-weight:normal">Hand Flip Test</h5>
+            </a>
+            <!--<p><a class="btn btn-secondary" href="#" role="button">Start &raquo;</a></p>-->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <a href="#">
+            <img class="rounded-circle" src="images/press.png" width="140" height="140">
+            <h5 style="font-weight:normal">Froment Test</h5>
+            </a>
+            <!--<p><a class="btn btn-secondary" href="#" role="button">Start &raquo;</a></p>-->
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div>
+    <div align="center" style="background-color: #e9ecef;">
+      <h1 style="margin-top: 2rem; padding-top: 2rem; padding-bottom: 2rem;">Progress</h1>
+      <div class="row" align="center" style="padding-bottom: 3rem; padding-left: 2rem; padding-right: 2rem;">
+        <div class="col-lg-4">
+          <div id="pinchProg" style="width: 85%; length: 80%;"></div>
+        </div>
+        <div class="col-lg-4">
+          <div id="flipProg" style="width: 85%; length: 80%;"></div>
+        </div>
+        <div class="col-lg-4">
+          <div id="testProg" style="width: 85%; length: 80%;"></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="Scripts/jquery-slim.min.js"><\/script>')</script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/flipProg.js"></script>
+    <script src="Scripts/pinchProg.js"></script>
+    <script src="Scripts/testProg.js"></script>
+  </body>
+</html>

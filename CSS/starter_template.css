@@ -1,0 +1,40 @@
+body {
+  padding-top: 5rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+#container1 {
+  margin: 0 auto;
+  width: 800px;
+  height: 8px;
+	align: center;
+}
+
+#flipProg {
+	margin: 0 auto;
+	align: center;
+}
+.graph{
+	height : 350px;
+	width  : 300px;
+}
+.floating-box {
+		position:absolute;
+		top:40px;
+    width:  800px;
+    height: 200px;
+    margin: 0 auto;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.containImage {
+    position: relative;
+    text-align: center;
+    color: white;
+}

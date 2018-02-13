@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+
+  <title>Flip Hand Results</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="CSS/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="CSS/starter_template.css" rel="stylesheet">
+	<link href="CSS/album.css" rel="stylesheet">
+	<script src="Scripts/plotly-latest.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="intro.html">MyoTherapy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+          </li>
+           <li class="nav-item active">
+            <a class="nav-link" href="profile.html">Profile<span class="sr-only">(current)</span></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exercises</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Pinch and Grip</a>
+            <a class="dropdown-item" href="#">Flip Hand</a>
+            <a class="dropdown-item" href="#">Froment Test </a>
+          </div>
+        </li>
+        </ul>
+        
+        <a class="btn btn-outline-info my-2 my-sm-0" href="login.html">Logout</a>
+        
+      </div>
+    </nav>
+
+	
+    <div class="starter-template" style="padding-bottom:1rem">
+      <h1> Flip Hands Results</h1>
+    </div>
+		
+		<div  class = "center" style="background-color: #e9ecef;">
+				
+        <h1 class="jumbotron-heading" style="padding-top: 2rem;" id="percentRange">0%</h1>
+             <!-- <div style="text-align: center; padding: 0cm 0cm 0.7cm 0cm"><iframe width="560" height="315" src="https://www.youtube.com/embed/te1RBQQlHz4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div> -->
+       <div class="container">
+       <p class="lead text-muted" style="padding-bottom: 2rem;"> of total range of motion</p> 
+                 <!--<div class="d-flex justify-content-between align-items-center"></div>-->
+       </div>
+      </div>
+		<script>
+			function get(name){
+   			if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+      		return decodeURIComponent(name[1]);
+			}
+			var a = get('json');
+			var json = JSON.parse(a);
+			console.log(json['final']);
+			var percent = json['final']*100;
+			percent = Math.round(percent);
+			document.getElementById("percentRange").innerHTML = percent+"%";
+		</script>
+    <div align="center" style="padding-top:2rem">
+			<div>
+          <div id="flipProg" style="width: 60%; length: 50%;"></div>
+        </div>
+    </div>
+	<br>
+	<div align="center">
+		<a class="btn btn-secondary" href="profile.html" role="button">Return</a>
+	</div>
+	<br>
+	<br>
+	<br>
+
+		
+
+    
+
+  </main>
+  <!-- /.container -->
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="Scripts/jquery-slim.min.js"><\/script>')
+  </script>
+  <script src="Scripts/popper.min.js"></script>
+  <script src="Scripts/bootstrap.min.js"></script>
+	<script src="Scripts/flipProg.js"></script>
+</body>
+
+</html>
