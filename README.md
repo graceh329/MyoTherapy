@@ -6,8 +6,8 @@ MyoTherapy uses the Myo Armband to guide users through a series of exercises to 
 
 ## Demo Videos
 
-[Pinch and Grip Demo](https://www.youtube.com/watch?v=bTHuANvjT9M)
-[Flip Range of Motion Demo](https://www.youtube.com/watch?v=rM2dd2CpyI8)
+*[Pinch and Grip Demo](https://www.youtube.com/watch?v=bTHuANvjT9M)
+*[Flip Range of Motion Demo](https://www.youtube.com/watch?v=rM2dd2CpyI8)
 
 ## Getting Started
 
